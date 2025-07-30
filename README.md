@@ -48,4 +48,31 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
 # test-router-issue-app
+
+## Reproducing the Navigation Error
+
+To reproduce the navigation error, follow these steps:
+
+1. **Start the application**
+2. **Navigate to the "Explore" tab**
+3. **Click on the "Complete Passenger Flight" button**
+4. **Click on the "Cancel Passenger Flight" button**
+
+You will see the following error in the console:
+
+```
+Warning: Error: Couldn't find a navigation context. Have you wrapped your app with 'NavigationContainer'? See https://reactnavigation.org/docs/getting-started for setup instructions.
+
+This error is located at:
+
+Call Stack
+  Wrapper (<anonymous>)
+  ScreenContentWrapper (<anonymous>)
+  RNSScreenStack (<anonymous>)
+  KeyboardControllerView (<anonymous>)
+  RNCSafeAreaProvider (<anonymous>)
+  App (<anonymous>)
+  ErrorOverlay (<anonymous>)
+```
